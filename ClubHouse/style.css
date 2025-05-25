@@ -104,6 +104,7 @@
 
     /* parte das caixas de clubes na página de perfil */
     .asidemain {
+        cursor: pointer;
         position: center;
         height: 250px;
         width: 98.5%; /* Ajustado para ocupar a largura disponível */
@@ -127,3 +128,123 @@
         display: block;
         border-radius: 10px;
     }
+
+/* parte da página solo de clube(RPG) */
+
+.bodyRPG{
+    margin: 0;
+    padding: 0;
+}
+
+.rpg {
+    margin-left: 140px;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0;
+    background-color: #5d5d5d;
+    min-height: 100vh;
+}
+
+.banner-clube-rpg {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.linhaRPGbanner{
+    top: -52px;
+    border: none;
+    height: 5px;
+    background-color: #222;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.caixa-nome {
+    top: -42px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #800538;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    user-select: none;
+    margin-left: 20px;
+    margin-bottom: -15px;
+    position: relative;
+    z-index: 3;  
+    border: 2px solid #333;    
+}
+
+.botao-seguir {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 300px;
+    height: 45px;
+    background-color: #454545;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    gap: 8px;
+    margin-left: 20px;
+    border: 2px solid #333;    
+}
+  
+.botao-seguir:hover {
+    background-color: #3d3d3d;
+}
+  
+.seta {
+    font-size: 18px;
+}
+
+.botao-com-texto {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    justify-content: center;
+    width: 300px;
+    padding: 15px 20px;
+    background-color: #454545;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    gap: 8px; 
+    margin-left: 20px;
+    border: 2px solid #333;
+}
+  
+.topo-botao {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.texto-inferior {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.botao-com-texto:hover {
+    background-color: #3d3d3d;
+}
