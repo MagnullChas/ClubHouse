@@ -1,0 +1,338 @@
+    .menu-lateral .logo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .menu-lateral .logo img {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .menu-lateral {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 100vh;
+        padding: 20px;
+        color: white;
+        background-color: #B84776;
+    }
+    .menu-lateral ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+    .menu-lateral a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+    }
+    .menu-lateral a:hover {
+        background-color: #800538;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, border-radius 0.3s ease;
+    }
+
+    main {
+        margin-left: 140px;   
+        padding-bottom: 45px; 
+    }
+
+    .perfil{
+        position: center
+    }
+
+    footer{
+        position: fixed;
+        left: 140px;
+        right: 0;
+        bottom: 0;
+        width: calc(100% - 140px);
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    .banner-perfil {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        border-radius: 15px;
+    }
+
+    .foto-perfil {
+        position: absolute;
+        top: 175px;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 10px solid white;
+    }
+
+    .nome-usuario {
+        position: center;
+        font-size: 3.0em;
+        color: #000000;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .descricao-usuario {
+        position: center;
+        font-size: 1.5em;
+        color: #333;
+        text-align: center;
+        margin-top: 90x;
+    }
+
+    .biografia-usuario {
+        position: center;
+        font-size: 1.5em;
+        color: #333;
+        text-align: center;
+        margin-top: 90x;
+    }
+
+    /* parte das caixas de clubes na página de perfil */
+    .asidemain {
+        cursor: pointer;
+        position: center;
+        height: 250px;
+        width: 98.5%; /* Ajustado para ocupar a largura disponível */
+        background-color: rgb(69, 69, 69);
+        border-radius: 8px;
+        display: flex; /* Usando flexbox para posicionar os itens */
+        justify-content: right; /* Alinha a imagem à direita */
+        padding: 10px;
+    }
+
+    .texto {
+        flex: 1; /* Faz o texto ocupar o espaço restante */
+        color: white;
+        padding-right: 10px; /* Adiciona um espaçamento entre o texto e a imagem */
+        font-size: 25px;
+    }
+
+    .imagem-clube {
+        width: 40%; /* Imagem ocupa metade do espaço */
+        height: 100%; /* A altura é ajustada para manter a proporção da imagem */
+        display: block;
+        border-radius: 10px;
+    }
+
+/* parte da página solo de clube(RPG) */
+
+.bodyRPG{
+    margin: 0;
+    padding: 0;
+}
+
+.rpg {
+    margin-left: 140px;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0;
+    background-color: #5d5d5d;
+    min-height: 100vh;
+}
+
+.banner-clube-rpg {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.linhaRPGbanner{
+    top: -52px;
+    border: none;
+    height: 5px;
+    background-color: #222;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.caixa-nome {
+    top: -42px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #800538;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    user-select: none;
+    margin-left: 20px;
+    margin-bottom: -15px;
+    position: relative;
+    z-index: 3;  
+    border: 2px solid #333;    
+}
+
+.botao-seguir {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 300px;
+    height: 45px;
+    background-color: #454545;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    gap: 8px;
+    margin-left: 20px;
+    border: 2px solid #333;    
+}
+  
+.botao-seguir:hover {
+    background-color: #3d3d3d;
+}
+  
+.seta {
+    font-size: 18px;
+}
+
+.botao-com-texto {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    justify-content: center;
+    width: 300px;
+    padding: 15px 20px;
+    background-color: #454545;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    gap: 8px; 
+    margin-left: 20px;
+    border: 2px solid #333;
+}
+  
+.topo-botao {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.texto-inferior {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.botao-com-texto:hover {
+    background-color: #3d3d3d;
+}
+
+/* NOTIFICAÇÕES */
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}   
+
+.menu-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #7B0F3C;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #7B0F3C;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #999;
+}
+
+.categoria {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.evento-especial span {
+  color: #9B1F87;
+  font-weight: bold;
+}
+
+.titulo {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.data-hora {
+  font-size: 13px;
+  color: #444;
+}
+
+.participantes {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #DE5B6B;
+  display: flex;
+  align-items: center;
+}
+
+/* Mensagem final */
+.mensagem-final {
+  background-color: #F6DDE0;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #7B0F3C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
