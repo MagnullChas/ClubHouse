@@ -631,3 +631,221 @@
     color: #B84776;
 }
 
+/* Parte da home (pedro henrique) */
+
+.area-principal {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.calendario {
+    width: 420px;
+    height: 430px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 2px solid #ccc;
+    flex-shrink: 0;
+}
+
+.calendario .mes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendario table {
+    width: 100%;
+    height: calc(100% - 50px);
+    border-collapse: collapse;
+}
+
+.calendario th {
+    text-transform: lowercase;
+    color: #B84776;
+    padding-bottom: 10px;
+}
+
+.calendario td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.calendario td:hover {
+    background-color: #e0e0e0;
+}
+
+.calendario .selecionado {
+    background-color: #B84776;
+    color: white;
+}
+
+.eventos {
+    width: 280px;
+    background-color: #f0f0f0;
+    margin-right: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 430px;
+    overflow-y: auto;
+}
+
+.eventos h2 {
+    margin-top: 0;
+}
+
+.eventos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.eventos li {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.busca {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.busca input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.busca button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #B84776;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.feed-noticias {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feed-noticias h2 {
+    margin-top: 0;
+}
+
+.feed-noticias .noticia {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.feed-noticias .noticia h3 {
+    background-color: #800538;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px 8px 0 0;
+    margin: -15px -20px 12px -20px;
+}
+
+/* NOTIFICAÇÕES (pedro augusto) */
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}   
+
+.menu-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #7B0F3C;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #7B0F3C;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #999;
+}
+
+.categoria {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.evento-especial span {
+  color: #9B1F87;
+  font-weight: bold;
+}
+
+.titulo {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.data-hora {
+  font-size: 13px;
+  color: #444;
+}
+
+.participantes {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #DE5B6B;
+  display: flex;
+  align-items: center;
+}
+
+/* Mensagem final */
+.mensagem-final {
+  background-color: #F6DDE0;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #7B0F3C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
