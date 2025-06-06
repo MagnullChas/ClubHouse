@@ -4,6 +4,7 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Clubhouse - Perfil</title>
         <link rel="stylesheet" href="style.css">
+        <script src="JavaScript/perfil.js" defer></script>
         <link rel="icon" href="img/logo.png" type="image/png">
     </head>
     <body>
@@ -18,19 +19,30 @@
                     <li><a href="perfil.html">Perfil</a></li>
                     <li><a href="clubes.html">Clubes</a></li>
                     <li><a href="notificacoes.html">Notificações</a></li>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <li><a href="configuracoes.html">Configurações</a></li>
                 </ul>
             </nav>
         </aside>
         <!-- prato principal da página de perfil -->
         <main class="perfil">
-            <img src="img/bannerPerfil.jpg " alt="Banner do perfil" class="banner-perfil">
+            <button id="editarBtn" class="botao-editar">Editar</button>
+
+            <img src="img/bannerPerfil.jpg" alt="Banner do perfil" class="banner-perfil">
             <img class="foto-perfil" src="img/katchuga.webp" alt="Foto do usuário" />
-            <h1 class="nome-usuario">Enrico</h1>
-            <h1 class="descricao-usuario">Curso: Arquitetura<p>5° Período</p><p>Presidente do clube de RPG</p></h1>
-            <h1 class="biografia-usuario">Nerd, apaixonado por café e constantemente com sono!</h1>
-            <br>
-            <h1>Clubes que participa:</h1>
-            
+
+            <h1 class="nome-usuario" id="nomeUsuario">Enrico</h1>
+
+            <h1 class="descricao-usuario">
+                Curso: <span id="curso">Arquitetura</span><br>
+                <span id="periodo">5° Período</span><br>
+                <span id="cargo">Presidente do clube de RPG</span>
+            </h1>
+
+            <h1 class="biografia-usuario" id="biografiaUsuario">
+                Nerd, apaixonado por café e constantemente com sono!
+            </h1>
+           
             <!-- caixa de clube 01 -->
         <a href="clubeRPG.html" style="text-decoration: none;">
             <aside class="asidemain">
