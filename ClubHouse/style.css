@@ -107,6 +107,27 @@
         margin-top: 90x;
     }
 
+    /* edição da parte de perfil */
+
+    .botao-editar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #B84776;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    }
+
+    .botao-editar:hover {
+    background-color: #B84776;
+    }
+
+
     /* parte das caixas de clubes na página de perfil */
     .asidemain {
         cursor: pointer;
@@ -849,3 +870,125 @@
   justify-content: space-between;
   align-items: center;
 }
+
+/* página de login */
+
+/* Estilo geral da página */
+.bodyLogin {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #B84776; /* cor de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo como plano de fundo central */
+.background-logo {
+    background: url('img/logo.png') no-repeat center center;
+    background-size: 10px; /* Tamanho da logo */
+    opacity: 0.2; /* Deixa ela suave no fundo */
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    z-index: 0; /* Fica atrás do conteúdo */
+}
+
+/* Formulário de login */
+.login-form {
+    z-index: 1; /* Fica na frente da logo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+    width: 300px;
+}
+
+/* Estilo dos inputs e botão */
+.login-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-form button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+/* Parte da página de confirgurações */
+
+.configuracoes {
+    margin-left: 200px; /* ajusta dependendo da largura da barra lateral */
+    padding: 40px;
+}
+
+.configuracoes button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modo-escuro {
+    background-color: #121212;
+    color: white;
+}
+
+.modo-escuro a {
+    color: lightblue;
+}
+
+main.configuracoes {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    margin-left: 200px; /* dependendo da largura do menu lateral */
+}
+
+.imagem-fundo {
+    position: absolute;
+    top: 0;
+    left: 200px; /* ajuste conforme o tamanho do menu lateral */
+    width: 940px;
+    height: 550px;
+    z-index: 0;
+    opacity: 0.4; /* deixa a imagem mais discreta */
+    pointer-events: none; /* permite clicar nos botões mesmo com a imagem por trás */
+} 
