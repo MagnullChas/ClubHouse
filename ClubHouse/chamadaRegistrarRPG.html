@@ -1,0 +1,104 @@
+<html>
+    <head>
+       <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Clubhouse</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/logo.png" type="image/png">
+    </head>
+    <body class="bodyRPG">
+        <aside class="menu-lateral">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo do site">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="clubes.html">Clubes</a></li>
+                    <li><a href="notificacoes.html">Notificações</a></li>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <li><a href="configuracoes.html">Configurações</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="pagina-membros-conteudo"> 
+            <div class="container-geral-pagina">
+            
+            <div class="titulo-pagina-container">
+                <a href="chamadaRPG.html" class="botao-voltar-pagina" title="Voltar para Seleção de Evento">
+                &lt; </a>
+                <h1>Chamada: Sessão de D&D 5e</h1>
+            </div>
+
+            <div class="tabela-admin-container">
+                <table class="tabela-admin">
+                    <thead>
+                        <tr>
+                            <th>Membro</th>
+                            <th>Status da Chamada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="celula-membro">
+                                <img src="img/avatar_carlos.jpg" alt="Avatar de Carlos" class="avatar-tabela">
+                                <span>Carlos "Mestre" Oliveira</span>
+                            </td>
+                            <td class="celula-chamada">
+                                <div class="grupo-status-chamada">
+                                    <label><input type="radio" name="status_carlos" value="presente"> Presente</label>
+                                    <label><input type="radio" name="status_carlos" value="ausente"> Ausente</label>
+                                    <label><input type="radio" name="status_carlos" value="justificado"> Justificado</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="celula-membro">
+                                <img src="img/avatar_beatriz.jpg" alt="Avatar de Beatriz" class="avatar-tabela">
+                                <span>Beatriz "Bia" Lima</span>
+                            </td>
+                            <td class="celula-chamada">
+                                <div class="grupo-status-chamada">
+                                    <label><input type="radio" name="status_beatriz" value="presente"> Presente</label>
+                                    <label><input type="radio" name="status_beatriz" value="ausente"> Ausente</label>
+                                    <label><input type="radio" name="status_beatriz" value="justificado"> Justificado</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="celula-membro">
+                                <img src="img/avatar_juliana.jpg" alt="Avatar de Juliana" class="avatar-tabela">
+                                <span>Juliana Santos</span>
+                            </td>
+                            <td class="celula-chamada">
+                                <div class="grupo-status-chamada">
+                                    <label><input type="radio" name="status_juliana" value="presente"> Presente</label>
+                                    <label><input type="radio" name="status_juliana" value="ausente"> Ausente</label>
+                                    <label><input type="radio" name="status_juliana" value="justificado"> Justificado</label>
+                                </div>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="celula-membro">
+                                <img src="img/avatar_mariana.jpg" alt="Avatar de Mariana" class="avatar-tabela">
+                                <span>Mariana Costa</span>
+                            </td>
+                            <td class="celula-chamada">
+                                <div class="grupo-status-chamada">
+                                    <label><input type="radio" name="status_mariana" value="presente"> Presente</label>
+                                    <label><input type="radio" name="status_mariana" value="ausente"> Ausente</label>
+                                    <label><input type="radio" name="status_mariana" value="justificado"> Justificado</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="submit" class="botao-submit-form" style="margin-top: 25px;">Salvar Chamada</button>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright 2025 - Designed by <a>ClubHouse</a></p>
+        </footer>
+    </body>
+</html>

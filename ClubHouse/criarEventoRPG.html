@@ -1,0 +1,80 @@
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Clubhouse</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/logo.png" type="image/png">
+    </head>
+    <body class="bodyRPG">
+        <aside class="menu-lateral">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo do site">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="clubes.html">Clubes</a></li>
+                    <li><a href="notificacoes.html">Notificações</a></li>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <li><a href="configuracoes.html">Configurações</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="pagina-membros-conteudo"> 
+            <div class="container-geral-pagina">
+                
+                <div class="titulo-pagina-container">
+                    <a href="clubeRPG.html" class="botao-voltar-pagina" title="Voltar para Clube RPG">
+                    &lt; </a>
+                    <h1>Criar Novo Evento</h1>
+                </div>
+
+                <form class="formulario-entrada" action="#" method="POST">
+                    <div class="campo-form">
+                        <label for="titulo-evento">Título do Evento</label>
+                        <input type="text" id="titulo-evento" name="titulo-evento" required placeholder="Ex: Noite de One-Shot de Terror">
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="mestre">Mestre do Jogo</label>
+                        <input type="text" id="mestre" name="mestre" required placeholder="Seu nome ou o nome do mestre responsável">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="data-hora">Data e Hora</label>
+                        <input type="datetime-local" id="data-hora" name="data-hora" required>
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="local">Local</label>
+                        <input type="text" id="local" name="local" required placeholder="Ex: Online (Discord) ou Sala 5 do Bloco C">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="sistema">Sistema de RPG</label>
+                        <input type="text" id="sistema" name="sistema" required placeholder="Ex: D&D 5e, Call of Cthulhu, etc.">
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="vagas">Número de Vagas</label>
+                        <input type="number" id="vagas" name="vagas" min="1" required placeholder="Quantos jogadores podem participar?">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="descricao">Descrição do Evento</label>
+                        <textarea id="descricao" name="descricao" rows="6" placeholder="Descreva a aventura, o que os jogadores podem esperar, e qualquer pré-requisito necessário..."></textarea>
+                    </div>
+
+                    <div class="campo-form">
+                        <button type="submit" class="botao-submit-form">Criar Evento</button>
+                    </div>
+                </form>
+
+            </div>
+        </main>
+        <footer>
+            <p>Copyright 2025 - Designed by <a>ClubHouse</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Clubhouse</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/logo.png" type="image/png">
+    </head>
+    <body class="bodyRPG">
+        <aside class="menu-lateral">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo do site">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="clubes.html">Clubes</a></li>
+                    <li><a href="notificacoes.html">Notificações</a></li>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <li><a href="configuracoes.html">Configurações</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="pagina-membros-conteudo"> 
+            <div class="container-geral-pagina">
+                
+                <div class="titulo-pagina-container">
+                    <a href="clubeRPG.html" class="botao-voltar-pagina" title="Voltar para Clube RPG">
+                    &lt; </a>
+                    <h1>Pedido de Entrada para o Clube</h1>
+                </div>
+
+                <form class="formulario-entrada" action="#" method="POST">
+                    <p class="instrucao-form">Preencha o formulário abaixo para enviar sua solicitação de entrada. Os administradores irão avaliar seu pedido.</p>
+
+                    <div class="campo-form">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="apelido">Apelido (Opcional)</label>
+                        <input type="text" id="apelido" name="apelido">
+                    </div>
+
+                    <div class="campo-form">
+                        <label>Sistemas de Interesse</label>
+                        <div class="grupo-checkbox">
+                            <label><input type="checkbox" name="sistema" value="dnd5e"> D&D 5e</label>
+                            <label><input type="checkbox" name="sistema" value="pathfinder"> Pathfinder</label>
+                            <label><input type="checkbox" name="sistema" value="cthulhu"> Call of Cthulhu</label>
+                            <label><input type="checkbox" name="sistema" value="tormenta"> Tormenta20</label>
+                            <label><input type="checkbox" name="sistema" value="outro"> Outro</label>
+                        </div>
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label>Nível de Experiência</label>
+                        <div class="grupo-radio">
+                            <label><input type="radio" name="experiencia" value="iniciante"> Iniciante</label>
+                            <label><input type="radio" name="experiencia" value="intermediario"> Intermediário</label>
+                            <label><input type="radio" name="experiencia" value="experiente"> Experiente</label>
+                        </div>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="mensagem">Por que você quer entrar no clube?</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Fale um pouco sobre você e seus interesses no RPG..."></textarea>
+                    </div>
+
+                    <div class="campo-form">
+                        <button type="submit" class="botao-submit-form">Enviar Solicitação</button>
+                    </div>
+                </form>
+
+            </div>
+        </main>
+        <footer>
+            <p>Copyright 2025 - Designed by <a>ClubHouse</a></p>
+        </footer>
+    </body>
+</html>

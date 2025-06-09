@@ -155,125 +155,6 @@
         border-radius: 10px;
     }
 
-/* parte da página solo de clube(RPG) */
-
-.bodyRPG{
-    margin: 0;
-    padding: 0;
-}
-
-.rpg {
-    margin-left: 140px;
-    margin-top: 0;
-    margin-right: 0;
-    padding: 0;
-    background-color: #5d5d5d;
-    min-height: 100vh;
-}
-
-.banner-clube-rpg {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    position: relative;
-    z-index: 1;
-}
-
-.linhaRPGbanner{
-    top: -52px;
-    border: none;
-    height: 5px;
-    background-color: #222;
-    margin: 0;
-    position: relative;
-    z-index: 2;
-}
-
-.caixa-nome {
-    top: -42px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #800538;
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    user-select: none;
-    margin-left: 20px;
-    margin-bottom: -15px;
-    position: relative;
-    z-index: 3;  
-    border: 2px solid #333;    
-}
-
-.botao-seguir {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    width: 300px;
-    height: 45px;
-    background-color: #454545;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-    gap: 8px;
-    margin-left: 20px;
-    border: 2px solid #333;    
-}
-  
-.botao-seguir:hover {
-    background-color: #3d3d3d;
-}
-  
-.seta {
-    font-size: 18px;
-}
-
-.botao-com-texto {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;  
-    justify-content: center;
-    width: 300px;
-    padding: 15px 20px;
-    background-color: #454545;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-    gap: 8px; 
-    margin-left: 20px;
-    border: 2px solid #333;
-}
-  
-.topo-botao {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-  
-.texto-inferior {
-    font-size: 12px;
-    opacity: 0.8;
-}
-
-.botao-com-texto:hover {
-    background-color: #3d3d3d;
-}
 
 /* aqui começa a parte do código do Edgar */    
 
@@ -286,11 +167,13 @@
     margin-left: 140px;
     margin-top: 0;
     margin-right: 0;
+    height: 100%;
+    box-sizing: border-box;
     background-color: #5d5d5d;
-    min-height: 100vh;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .banner-clube-rpg {
@@ -305,7 +188,7 @@
     border-radius: 0;
     position: relative;
     z-index: 20;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 70%), url('../img/rpg.webp');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 70%), url("img/rpg.webp");
     background-size: cover;
     background-position: center;
 }
@@ -340,7 +223,7 @@
 
 .conteudo-principal-clube {
     display: flex;
-    margin-top: 40px;
+    margin-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
     gap: 30px;
@@ -348,7 +231,7 @@
     max-width: calc(100% - 140px - 600px - 30px - 40px);
     margin-right: auto;
     position: relative;
-     z-index: 5;
+    z-index: 5;
 }
 
 .area-botoes {
@@ -357,11 +240,17 @@
     flex-direction: column;
 }
 
+.wrapper-botoes-scroll {
+    max-height: 450px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
 .area-lateral {
-    position: fixed; 
-    top: 200px; 
-    right: 20px; 
-    width: 600px; 
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -371,55 +260,59 @@
     padding-right: 10px; 
     padding-bottom: 0px;
     padding-left: 0px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     z-index: 10; 
     background-color: #5d5d5d;
 }
 
-.area-lateral::-webkit-scrollbar {
+.area-lateral::-webkit-scrollbar,
+.wrapper-botoes-scroll::-webkit-scrollbar {
     width: 10px;
 }
 
-.area-lateral::-webkit-scrollbar-track {
+.area-lateral::-webkit-scrollbar-track,
+.wrapper-botoes-scroll::-webkit-scrollbar-track {
     background: #4a4a4a;
     border-radius: 10px;
 }
 
-.area-lateral::-webkit-scrollbar-thumb {
+.area-lateral::-webkit-scrollbar-thumb,
+.wrapper-botoes-scroll::-webkit-scrollbar-thumb {
     background: #B84776;
     border-radius: 10px;
     border: 2px solid #4a4a4a;
 }
 
-.area-lateral::-webkit-scrollbar-thumb:hover {
+.area-lateral::-webkit-scrollbar-thumb:hover,
+.wrapper-botoes-scroll::-webkit-scrollbar-thumb:hover {
     background: #800538;
 }
 
 .botao-seguir {
     margin-left: 0;
     margin-bottom: 10px;
+    margin-top: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    width: 500px;
+    width: 650px;
     height: 45px;
     background-color: #454545;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
     font-size: 16px;
     gap: 8px;
     margin-left: 20px;
-    border: 2px solid #333;    
 }
   
 .botao-seguir:hover {
     background-color: #3d3d3d;
 }
-  
+
 .seta {
     font-size: 18px;
 }
@@ -431,17 +324,16 @@
     flex-direction: column;
     align-items: flex-start;  
     justify-content: center;
-    width: 500px;
+    width: 650px;
     padding: 15px 20px;
     background-color: #454545;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
     gap: 8px; 
     margin-left: 20px;
-    border: 2px solid #333;
 }
   
 .topo-botao {
@@ -451,12 +343,65 @@
 }
   
 .texto-inferior {
-    font-size: 12px;
+    font-size: 14px;
     opacity: 0.8;
 }
 
 .botao-com-texto:hover {
     background-color: #3d3d3d;
+}
+
+.botao-seguir-admin{
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 650px;
+    height: 45px;
+    background-color: #662424;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    gap: 8px;
+    margin-left: 20px;
+}
+
+.botao-seguir-admin:hover {
+    background-color: #4e1414;
+}
+
+.botao-entrar {
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 650px;
+    height: 55px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.2em;
+    gap: 8px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+.botao-entrar:hover {
+    background-color: #218838;
+    transform: scale(1.02);
 }
 
 .conteudo-lateral {
@@ -495,6 +440,65 @@
     margin-bottom: 8px;
     border-radius: 5px;
     font-size: 0.9em;
+}
+
+.placeholder-calendario {
+    text-align: center;
+}
+
+.mes-calendario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.mes-calendario span {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.tabela-calendario {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-calendario th,
+.tabela-calendario td {
+    padding: 10px;
+    border: 1px solid #4a4a4a;
+    font-size: 0.9em;
+}
+
+.tabela-calendario th {
+    color: #B84776;
+    font-weight: bold;
+}
+
+.tabela-calendario td {
+    color: #f0f0f0;
+}
+
+.tabela-calendario .dia-evento {
+    background-color: #B84776;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    border-color: #B84776;
+}
+
+.tabela-calendario .dia-outro-evento {
+    background-color: #800538;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    border-color: #800538;
+}
+
+.tabela-calendario .dia-cinza {
+    color: #777;
 }
 
 .galeria-clube {
@@ -561,227 +565,825 @@
     text-align: justify;
 }
 
+/* Chat */
+
 .chatRpg {
     margin-left: 140px;
-    margin-top: 0;
-    margin-right: 0;
+    height: 100%;
+    box-sizing: border-box;
     background-color: #5d5d5d;
-    min-height: 100vh;
-    padding-bottom: 70px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: calc(75px + 20px);
     position: relative;
     z-index: 1;
     display: flex; 
     align-items: stretch;
-    gap: 30px;
-}
-
-.lateral-chat-clube {
-    top: 0px;
-    right: 0;
-    background-color: #B84776;
-    width: 200px;
-    flex-shrink: 0;
-    padding: 15px;
-    height: auto;
-    z-index: 10;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.lateral-chat-clube h1 {
-    color: black;
-    margin-top: 0;
-    font-size: 1.3em;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.lateral-chat-clube ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.lateral-chat-clube li {
-    display: flex;
-    align-items: center;
     gap: 10px;
-    padding: 8px 0;
-    font-size: 1.1em;
-}
-
-.membro-online{
-    color: black;
-}
-
-.membro-offline{
-    color: gray;
-}
-
-.status-circulo {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.status-circulo.online {
-    background-color: #1ad314;
-}
-
-.status-circulo.offline {
-    background-color: #a00f1b;
-}
-
-.divisoria-membros-online {
-    background-color: #222;
-    height: 3px;
-    width: calc(100% - 10px);
-    margin: 15px 0;
+    overflow: hidden;
 }
 
 .area-principal-chat {
     flex-grow: 1;
     background-color: #4a4a4a;
     padding: 20px;
-}
-
-.area-principal-chat h1 {
-    margin-top: 0;
-    color: #B84776;
-}
-
-/* Parte da home (pedro henrique) */
-
-.area-principal {
+    border-radius: 8px;
     display: flex;
-    gap: 30px;
-    justify-content: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 100vh;
+    box-sizing: border-box;
 }
 
-.calendario {
-    width: 420px;
-    height: 430px;
-    background-color: #f0f0f0;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border: 2px solid #ccc;
+.chat-titulo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.botao-voltar-chat {
+    display: inline-flex; 
+    align-items: center;  
+    justify-content: center;  
+    width: 32px; 
+    height: 32px;
+    background-color: #B84776;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
     flex-shrink: 0;
 }
 
-.calendario .mes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+.botao-voltar-chat:hover {
+    background-color: #800538;
 }
 
-.calendario table {
-    width: 100%;
-    height: calc(100% - 50px);
-    border-collapse: collapse;
-}
-
-.calendario th {
-    text-transform: lowercase;
-    color: #B84776;
-    padding-bottom: 10px;
-}
-
-.calendario td {
-    text-align: center;
-    vertical-align: middle;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.calendario td:hover {
-    background-color: #e0e0e0;
-}
-
-.calendario .selecionado {
-    background-color: #B84776;
-    color: white;
-}
-
-.eventos {
-    width: 280px;
-    background-color: #f0f0f0;
-    margin-right: 40px;
-    padding: 15px;
-    border-radius: 10px;
-    max-height: 430px;
-    overflow-y: auto;
-}
-
-.eventos h2 {
+.area-principal-chat .chat-titulo-container h1 {
     margin-top: 0;
+    margin-bottom: 0;
+    color: #B84776;
+    flex-shrink: 0;
 }
 
-.eventos ul {
-    list-style: none;
-    padding: 0;
+.corpo-do-chat {
+    flex-grow: 1;
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-de-mensagens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+    align-items: flex-start;
+}
+
+.mensagem {
+    background-color: #433737;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 00px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 75%;
+}
+
+.mensagem.enviada {
+    background-color: #005C4B;
+    align-self: flex-end;  
+    flex-direction: row-reverse;
+}
+
+.mensagem .avatar-mensagem img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mensagem .separacao-mensagem {
+    display: flex;
+    flex-direction: column;
+}
+
+.mensagem h1{
+    margin-top: 0;
+    color: #E0E0E0;
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.mensagem p {
     margin: 0;
+    color: #bdbdbd;
+    font-size: 0.75em;
+    line-height: 1.4;
 }
 
-.eventos li {
-    background-color: white;
-    border: 1px solid #ccc;
+.caixa-de-mensagem {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
     padding: 10px;
-    margin-bottom: 10px;
+    background-color: #3a3a3a;
     border-radius: 8px;
 }
 
-.busca {
-    display: flex;
-    justify-content: center;
+#message-input {
+    flex-grow: 1;
+    border: none;
     padding: 10px;
+    border-radius: 8px;
+    background-color: #555;
+    color: white;
+    font-size: 1em;
 }
 
-.busca input {
-    width: 70%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
+#message-input::placeholder {
+    color: #aaa;
 }
 
-.busca button {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-left: none;
+#send-button {
+    border: none;
     background-color: #B84776;
     color: white;
-    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    padding: 0 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: #800538;
+}
+
+.lateral-chat-clube {
+    width: 220px;
+    flex-shrink: 0;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+     max-height: initial;
+}
+
+
+.lateral-chat-clube h1 {
+    color: black;
+    margin-top: 0;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.lateral-chat-clube ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.lateral-chat-clube li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.lateral-chat-clube li.item-divisoria {
+    padding: 0;
+    margin: 8px 0;
+}
+
+.membro-online{
+    color: white;
+}
+
+.membro-offline{
+    color: #888;
+}
+
+.status-circulo {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.status-circulo.online {
+    background-color: #2ECC71;
+}
+
+.status-circulo.offline {
+    background-color: #777;
+}
+
+.divisoria-membros-online {
+    background-color: #4a4a4a;
+    height: 1px;
+    width: 100%;
+}
+
+/* Lista de membros */
+
+.pagina-membros-conteudo {
+    margin-left: 140px;
+    padding: 25px;
+    padding-bottom: calc(75px + 25px);
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: #5d5d5d;
+    color: #f0f0f0;
+}
+
+.pagina-membros-conteudo .container-geral-pagina {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pagina-membros-conteudo h1 {
+    color: #B84776;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+.lista-membros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.cartao-membro {
+    background-color: #484848;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-membro {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #B84776;
+}
+
+.nome-membro {
+    font-size: 1.5em;
+    color: #E0E0E0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.bio-membro {
+    font-size: 0.95em;
+    color: #cccccc;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.tags-membro {
+    margin-top: auto;
+}
+
+.tags-membro .tag-sistema,
+.tags-membro .tag-papel {
+    display: inline-block;
+    background-color: #B84776;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin: 5px 3px;
+}
+
+.tags-membro .tag-papel {
+    background-color: #777;
+}
+
+.titulo-pagina-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.botao-voltar-pagina {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #B84776;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; 
+}
+
+.botao-voltar-pagina:hover {
+    background-color: #800538;
+}
+
+.pagina-membros-conteudo .titulo-pagina-container h1 {
+    color: #B84776;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.2em;
+}
+
+/* Eventos */
+
+.lista-eventos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cartao-evento {
+    background-color: #484848;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-left: 5px solid #B84776;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.data-evento {
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    flex-shrink: 0;
+    width: 70px;
+}
+
+.data-evento .mes {
+    display: block;
+    font-size: 0.9em;
+    color: #B84776;
+    margin-bottom: 5px;
+}
+
+.data-evento .dia {
+    display: block;
+    font-size: 2em;
+    line-height: 1;
+}
+
+.info-evento {
+    flex-grow: 1;
+}
+
+.titulo-evento {
+    margin: 0 0 5px 0;
+    color: #E0E0E0;
+    font-size: 1.6em;
+}
+
+.mestre-evento {
+    margin: 0 0 15px 0;
+    color: #aaa;
+    font-style: italic;
+}
+
+.descricao-evento {
+    margin: 0 0 15px 0;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.tags-evento span {
+    display: inline-block;
+    background-color: #3d3d3d;
+    color: #ccc;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.acao-evento {
+    flex-shrink: 0;
+}
+
+.botao-inscrever {
+    display: block;
+    background-color: #B84776;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.botao-inscrever:hover {
+    background-color: #800538;
+}
+
+.cartao-evento.evento-passado {
+    border-left-color: #777;
+    opacity: 0.7;
+}
+
+.cartao-evento.evento-passado .data-evento .mes {
+    color: #999;
+}
+
+.botao-desabilitado {
+    background-color: #555;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Comunicados */
+
+.lista-comunicados-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cartao-comunicado {
+    background-color: #484848;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho-comunicado {
+    border-bottom: 2px solid #B84776;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.titulo-comunicado {
+    margin: 0 0 8px 0;
+    color: #E0E0E0;
+    font-size: 1.8em;
+}
+
+.meta-comunicado {
+    margin: 0;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.conteudo-comunicado p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #ccc;
+    margin-bottom: 1em;
+}
+
+.conteudo-comunicado p:last-child {
+    margin-bottom: 0;
+}
+
+/* Membros Admin */
+
+.tabela-admin-container {
+    background-color: #484848;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.tabela-admin {
+    width: 100%;
+    border-collapse: collapse;
+    color: #f0f0f0;
+}
+
+.tabela-admin th,
+.tabela-admin td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #5f5f5f;
+    vertical-align: middle;
+}
+
+.tabela-admin th {
+    font-size: 1.1em;
+    color: #B84776;
+}
+
+.avatar-tabela {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.celula-acoes {
+    text-align: right;
+}
+
+.botao-acao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.botao-acao + .botao-acao {
+    margin-left: 10px;
+}
+
+.botao-acao:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.botao-configurar {
+    background-color: #555;
+}
+
+.botao-advertir {
+    background-color: #d4a017; /* Amarelo/Mostarda */
+}
+
+.botao-banir {
+    background-color: #a52a2a; /* Vermelho escuro */
+}
+
+/* Aprovação de membros */
+
+.lista-solicitacoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cartao-solicitacao {
+    background-color: #484848;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-solicitacao {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto-info-solicitacao .nome-membro {
+    margin: 0 0 5px 0;
+}
+
+.data-solicitacao {
+    font-size: 0.9em;
+    color: #aaa;
+    margin: 0;
+}
+
+.mensagem-solicitacao {
+    background-color: #3d3d3d;
+    border-radius: 8px;
+    padding: 15px;
+    border-left: 4px solid #B84776;
+}
+
+.mensagem-solicitacao p {
+    margin: 0;
+    color: #ccc;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.acoes-solicitacao {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.botao-acao-solicitacao {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.botao-acao-solicitacao:hover {
+    opacity: 0.85;
+}
+
+.botao-aprovar {
+    background-color: #28a745;
+}
+
+.botao-recusar {
+    background-color: #a52a2a;
+}
+
+/* Entrada membros */
+
+.formulario-entrada {
+    background-color: #484848;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza o formulário na página */
+}
+
+.instrucao-form {
+    text-align: center;
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.campo-form {
+    margin-bottom: 25px;
+}
+
+.campo-form label {
+    display: block;
+    color: #E0E0E0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.campo-form input[type="text"],
+.campo-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #5f5f5f;
+    background-color: #3d3d3d;
+    color: #f0f0f0;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+.campo-form textarea {
+    resize: vertical; /* Permite que o usuário redimensione a altura */
+}
+
+.grupo-checkbox, .grupo-radio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grupo-checkbox label, .grupo-radio label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     cursor: pointer;
 }
 
-.feed-noticias {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
+.grupo-checkbox input, .grupo-radio input {
+    cursor: pointer;
 }
 
-.feed-noticias h2 {
-    margin-top: 0;
-}
-
-.feed-noticias .noticia {
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.feed-noticias .noticia h3 {
-    background-color: #800538;
+.botao-submit-form {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
     color: white;
-    padding: 8px 12px;
-    border-radius: 8px 8px 0 0;
-    margin: -15px -20px 12px -20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-submit-form:hover {
+    background-color: #218838;
+}
+
+/* Chamada */
+
+.lista-selecao-eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cartao-selecao-evento {
+    background-color: #484848;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #5f5f5f;
+    transition: border-color 0.3s ease;
+}
+
+.cartao-selecao-evento:not(.evento-indisponivel):hover {
+    border-color: #B84776;
+}
+
+.info-selecao-evento .titulo-evento {
+    font-size: 1.4em;
+    margin: 0 0 5px 0;
+}
+
+.data-selecao-evento {
+    color: #aaa;
+    margin: 0;
+}
+
+.botao-iniciar-chamada {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.botao-iniciar-chamada:hover:not(.botao-desabilitado) {
+    background-color: #218838;
+}
+
+.evento-indisponivel {
+    opacity: 0.5;
+}
+
+.grupo-status-chamada {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.celula-chamada label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
 }
 
 /* NOTIFICAÇÕES (pedro augusto) */
@@ -873,77 +1475,74 @@
 
 /* página de login */
 
-/* Estilo geral da página */
 .bodyLogin {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #B84776; /* cor de fundo */
+    background-color: #B84776;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Logo como plano de fundo central */
 .background-logo {
-    background: url('img/logo.png') no-repeat center center;
-    background-size: 10px; /* Tamanho da logo */
-    opacity: 0.2; /* Deixa ela suave no fundo */
     position: absolute;
-    width: 65%;
-    height: 100%;
-    z-index: 0; /* Fica atrás do conteúdo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 60%;
+    max-width: 900px;
+    z-index: 1;
 }
 
-/* Formulário de login */
+.background-logo img {
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+    display: block;
+}
+
 .login-form {
-    z-index: 1; /* Fica na frente da logo */
+    position: relative;
+    z-index: 2;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     background: white;
-    padding: 30px;
+    padding: 30px 40px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 300px;
 }
 
-/* Estilo dos inputs e botão */
 .login-form input {
     margin: 10px 0;
     padding: 10px;
     width: 100%;
+    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
 }
 
-.login-form button {
+.botao {
+    display: inline-block;
+    padding: 12px 20px;
     margin-top: 15px;
-    padding: 10px;
     width: 100%;
+    box-sizing: border-box;
     border: none;
     background-color: #007bff;
     color: white;
+    text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.login-form button:hover {
-    background-color: #0056b3;
-}
-
-.botao {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
     text-align: center;
 }
 
@@ -951,10 +1550,11 @@
     background-color: #0056b3;
 }
 
+
 /* Parte da página de confirgurações */
 
 .configuracoes {
-    margin-left: 200px; /* ajusta dependendo da largura da barra lateral */
+    margin-left: 200px;
     padding: 40px;
 }
 
