@@ -1,0 +1,200 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+.menu-lateral {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+    background-color: #B84776;
+}
+
+.menu-lateral .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-lateral .logo img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-lateral a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.menu-lateral a:hover {
+    background-color: #800538;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+main {
+    margin-left: 140px;
+    padding-bottom: 45px;
+}
+
+.area-principal {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.calendario {
+    width: 420px;
+    height: 430px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 2px solid #ccc;
+    flex-shrink: 0;
+}
+
+.calendario .mes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendario table {
+    width: 100%;
+    height: calc(100% - 50px);
+    border-collapse: collapse;
+}
+
+.calendario th {
+    text-transform: lowercase;
+    color: #B84776;
+    padding-bottom: 10px;
+}
+
+.calendario td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.calendario td:hover {
+    background-color: #e0e0e0;
+}
+
+.calendario .selecionado {
+    background-color: #B84776;
+    color: white;
+}
+
+.eventos {
+    width: 280px;
+    background-color: #f0f0f0;
+    margin-right: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 430px;
+    overflow-y: auto;
+}
+
+.eventos h2 {
+    margin-top: 0;
+}
+
+.eventos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.eventos li {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.busca {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.busca input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.busca button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #B84776;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.feed-noticias {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feed-noticias h2 {
+    margin-top: 0;
+}
+
+.feed-noticias .noticia {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.feed-noticias .noticia h3 {
+    background-color: #800538;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px 8px 0 0;
+    margin: -15px -20px 12px -20px;
+}
+
+
+footer{
+    position: fixed;
+    left: 140px;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 140px);
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
