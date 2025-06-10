@@ -1677,7 +1677,7 @@ main.filmes .wrapper-botoes-scroll::-webkit-scrollbar-track {
 
 .categoria {
   font-size: 12px;
-  color: #888;
+  color: black;
   margin-bottom: 2px;
 }
 
@@ -1700,7 +1700,7 @@ main.filmes .wrapper-botoes-scroll::-webkit-scrollbar-track {
 .participantes {
   margin-top: 6px;
   font-size: 13px;
-  color: #DE5B6B;
+  color: black;
   display: flex;
   align-items: center;
 }
